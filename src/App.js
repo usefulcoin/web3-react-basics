@@ -9,10 +9,12 @@ function getLibrary(provider: any): Web3Provider {
   return library
 }
 
-export const App = () => {
+const App = () => {
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
       <Wallet />
     </Web3ReactProvider>
   )
 }
+
+export default App
